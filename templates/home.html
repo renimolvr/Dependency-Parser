@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malayalam Dependency Parser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+    .btn-custom {
+      background: #4338ca;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn-custom:hover {
+      background: #6366f1;
+    }
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+      margin-bottom: 15px;
+    }
+    .icon1 {
+      width: 24px;
+      height: 24px;
+      stroke: #4338ca;
+    }
+    .error-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <span>മലയാളം Dependency Parser</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/" onclick="resetSession(); return false;">Home</a></li>
+                <li><a href="/guidelines">Guidelines</a></li>
+                <li><a href="/description">Description</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="parser-card">
+            <h1>Malayalam Dependency Parser</h1>
+            {% if not show_output %}
+            <div class="parser-form">
+                <form method="post" id="parser-form">
+                    <div class="form-group">
+                        <label for="sentence">Enter a Malayalam sentence:</label>
+                        <textarea id="sentence" name="sentence" rows="4" placeholder="ഒരു മലയാളം വാക്യം നൽകുക." dir="auto" required></textarea>
+                        <p id="error-message" class="error-message"></p>
+                    </div>
+                    <button type="submit" class="btn-primary" id="parse-btn">Parse Sentence</button>
+                </form>
+            </div>
+            {% endif %}
+       {% if show_output %}
+            <iframe src="http://{{ request.host.split(':')[0] }}:8888/?t={{ timestamp }}"></iframe>
+            <center>
+                <form method="post" action="{{ url_for('reset') }}">
+                    <button type="button" class="btn btn-custom" onclick="resetSession();" onclick="sessionStorage.clear();">New Sentence</button>
+                </form>
+            </center>
+            {% endif %}
+        </div>
+        <div class="quick-links">
+            <h2>Quick Links</h2>
+            <div class="links-grid">
+                <a href="/upload" class="link-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon1">
+                        <path d="M12 16V4"></path>
+                        <polyline points="8 8 12 4 16 8"></polyline>
+                        <path d="M12 8v12"></path>
+                        <polyline points="16 16 12 20 8 16"></polyline>
+                        <line x1="4" y1="22" x2="20" y2="22"></line>
+                    </svg>
+                    <span>Upload & Download</span>
+                </a>
+                <a href="/pos" class="link-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    <span>POS Tags</span>
+                </a>
+                <a href="/dependency" class="link-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                    <span>Dependency Relations Tags</span>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Malayalam Dependency Parser. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const parseBtn = document.getElementById('parse-btn');
+        const sentenceInput = document.getElementById('sentence');
+        const errorMessage = document.getElementById('error-message');
+
+        parseBtn.addEventListener('click', function(event) {
+            const sentence = sentenceInput.value.trim();
+            const malayalamRegex = /^[\u0D00-\u0D7F\s.,!?;:“”‘’()\-\u200C\u200D]+$/;
+
+            if (!malayalamRegex.test(sentence)) {
+                event.preventDefault();
+                errorMessage.textContent = "Please enter a valid Malayalam sentence.";
+            } else {
+                errorMessage.textContent = "";
+            }
+        });
+    });
+
+    function resetSession() 
+    {
+        fetch('/reset', { method: 'POST' }) // Calls the reset endpoint
+            .then(() => {
+                sessionStorage.clear(); // Clears session storage
+                window.location.href = "/"; // Redirects to home page
+            });
+    }
+
+    </script>
+</body>
+</html>

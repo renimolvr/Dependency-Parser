@@ -1,0 +1,433 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = ഇന്ത്യയില്‍ അഗര്‍ത്തല, ഐസോള്‍, കൊല്‍ക്കത്ത, ചിറാപുഞ്ചി, കൂച്ച്‌ ബിഹാര്‍, ഡയമണ്ട് ഹാര്‍ബര്‍, ദിഗ, ഗുവാഹത്തി, ഇംഫാല്‍, ഇറ്റാനഗര്‍, കൊഹിമ, ലുംഡിങ്​, മാള്‍ഡ, നോര്‍ത്ത് ലാഖിംപൂര്‍, പാരാദീപ്, പാശിഘട്ട്, പോര്‍ട്ട് ബ്ലെയര്‍, പുരി, ഷില്ലോങ്​, സിബ്‌സാഗര്‍, സില്‍ച്ചാര്‍ എന്നീ നഗരങ്ങളിലാണ് ചന്ദ്രഗ്രഹണം കാണാനാകുക.
+1	ഇന്ത്യയില്‍	ഇന്ത്യ	PROPN	_	Animacy=Inan|Case=Loc|Number=Sing	2	obl	_	_
+2	അഗര്‍ത്തല	അഗര്‍ത്തല	PROPN	_	_	9	nmod	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	_	_
+4	ഐസോള്‍	ഐസോള്‍	PROPN	_	_	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	_	_
+6	കൊല്‍ക്കത്ത	കൊല്‍ക്കത്ത	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	_	_
+8	ചിറാപുഞ്ചി	ചിറാപുഞ്ചി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	_	_
+10	കൂച്ച്‌	കൂച്ച്‌	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	12	conj	_	_
+11	ബിഹാര്‍	ബിഹാര്‍	PROPN	_	_	10	flat	_	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	_	_
+13	ഡയമണ്ട്	ഡയമണ്ട്	PROPN	_	Tense=Past|VerbForm=Part	14	flat	_	_
+14	ഹാര്‍ബര്‍	ഹാര്‍ബര്‍	PROPN	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	15	conj	_	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	_	_
+16	ദിഗ	ദിഗ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	17	conj	_	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	_	_
+18	ഗുവാഹത്തി	ഗുവാഹത്തി	PROPN	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Pass	19	conj	_	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	_	_
+20	ഇംഫാല്‍	ഇംഫാല്‍	PROPN	_	_	21	conj	_	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	_	_
+22	ഇറ്റാനഗര്‍	ഇറ്റാനഗര്‍	PROPN	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	23	conj	_	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	_	_
+24	കൊഹിമ	കൊഹിമ	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	25	conj	_	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	_	_
+26	ലുംഡിങ്​	ലുംഡിങ്​	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	27	conj	_	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	_	_
+28	മാള്‍ഡ	മാള്‍ഡ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	29	conj	_	SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	_	_
+30	നോര്‍ത്ത്	നോര്‍ത്ത്	PROPN	_	Case=Nom|PronType=Int	32	conj	_	_
+31	ലാഖിംപൂര്‍	ലാഖിംപൂര്‍	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	30	flat	_	SpaceAfter=No
+32	,	,	PUNCT	_	_	33	punct	_	_
+33	പാരാദീപ്	പാരാദീപ്	PROPN	_	Animacy=Inan|Case=Acc|Number=Sing	34	conj	_	SpaceAfter=No
+34	,	,	PUNCT	_	_	35	punct	_	_
+35	പാശിഘട്ട്	പാശിഘട്ട്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	36	conj	_	SpaceAfter=No
+36	,	,	PUNCT	_	_	37	punct	_	_
+37	പോര്‍ട്ട്	പോര്‍ട്ട്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	39	conj	_	_
+38	ബ്ലെയര്‍	ബ്ലെയര്‍	PROPN	_	_	37	flat	_	SpaceAfter=No
+39	,	,	PUNCT	_	_	40	punct	_	_
+40	പുരി	പുരി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	41	conj	_	SpaceAfter=No
+41	,	,	PUNCT	_	_	42	punct	_	_
+42	ഷില്ലോങ്​	ഷില്ലോങ്​	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	43	conj	_	SpaceAfter=No
+43	,	,	PUNCT	_	_	44	punct	_	_
+44	സിബ്‌സാഗര്‍	സിബ്‌സാഗര്‍	PROPN	_	_	45	conj	_	SpaceAfter=No
+45	,	,	PUNCT	_	_	46	punct	_	_
+46	സില്‍ച്ചാര്‍	സില്‍ച്ചാര്‍	PROPN	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	47	conj	_	_
+47	എന്നീ	എന്നീ	CCONJ	_	Animacy=Anim|Case=Nom|Number=Sing	48	cc	_	_
+48-49	നഗരങ്ങളിലാണ്	_	_	_	_	_	_	_	_
+48	നഗരങ്ങളിൽ	നഗരം	NOUN	_	Animacy=Inan|Case=Loc|Number=Plur	51	obl	_	_
+49	ആണ്	ആക്	AUX	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin	48	cop	_	_
+50	ചന്ദ്രഗ്രഹണം	ചന്ദ്രഗ്രഹണം	NOUN	_	_	51	nsubj	_	_
+51-52	കാണാനാകുക	_	_	_	_	_	_	_	SpaceAfter=No
+51	കാണാൻ	കാണുക	VERB	_	Animacy=Inan|Case=Acc|Number=Sing	0	root	_	_
+52	ആകുക	ആക്	AUX	_	Aspect=Imp|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	51	aux	_	_
+53	.	.	PUNCT	_	_	51	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 2
+# text = പാറ ഖനനം, ജലം, വായു, മണ്ണ് എന്നിവ മലിനപ്പെടുത്തുന്ന വ്യവസായങ്ങള്‍, തടി മില്ലുകൾ, വന്‍കിട ജല വൈദ്യുത പദ്ധതി എന്നിവ ഉള്‍പ്പെടെ വിവിധ പ്രവര്‍ത്തനങ്ങള്‍ക്കാണ് ഈ മേഖലയില്‍ നിരോധനം ഏര്‍പ്പെടുത്തി കരട് വിജ്ഞാപനം പുറത്തിറക്കിയത്.
+1	പാറ	പാറ	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	2	compound	_	_
+2	ഖനനം	ഖനനം	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	4	nmod	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	_	_
+4	ജലം	ജലം	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	_	_
+6	വായു	വായു	NOUN	_	Abbr=Yes|Animacy=Inan|Case=Nom|Number=Sing	7	conj	_	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	_	_
+8	മണ്ണ്	മണ്ണ്	NOUN	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin	9	conj	_	_
+9	എന്നിവ	എന്നിവ	CCONJ	_	_	10	cc	_	_
+10	മലിനപ്പെടുത്തുന്ന	മലിനപ്പെടുത്തുക	VERB	_	_	11	conj	_	_
+11	വ്യവസായങ്ങള്‍	വ്യവസായം	NOUN	_	_	12	conj	_	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	_	_
+13	തടി	തടി	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	14	nmod	_	_
+14	മില്ലുകൾ	മില്ല്	NOUN	_	Animacy=Inan|Case=Nom|Number=Plur	15	conj	_	SpaceAfter=No
+15	,	,	PUNCT	_	_	19	punct	_	_
+16	വന്‍കിട	വന്‍കിട	ADJ	_	Animacy=Inan|Case=Nom|Number=Sing	17	amod	_	_
+17	ജല	ജല	NOUN	_	_	19	compound	_	_
+18	വൈദ്യുത	വൈദ്യുത	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	19	compound	_	_
+19	പദ്ധതി	പദ്ധതി	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	20	conj	_	_
+20	എന്നിവ	എന്നിവ	CCONJ	_	_	22	cc	_	_
+21	ഉള്‍പ്പെടെ	ഉള്‍പ്പെടെ	ADP	_	_	20	case	_	_
+22	വിവിധ	വിവിധ	ADJ	_	_	23	amod	_	_
+23-24	പ്രവര്‍ത്തനങ്ങള്‍ക്കാണ്	_	_	_	_	_	_	_	_
+23	പ്രവര്‍ത്തനങ്ങള്‍ക്ക്	പ്രവര്‍ത്തനം	NOUN	_	_	28	obl	_	_
+24	ആണ്	ആക്	AUX	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin	23	cop:emph	_	_
+25	ഈ	ഈ	DET	_	Deixis=Prox|PronType=Dem	26	det	_	_
+26	മേഖലയില്‍	മേഖല	NOUN	_	_	28	obl	_	_
+27	നിരോധനം	നിരോധനം	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	28	obj	_	_
+28	ഏര്‍പ്പെടുത്തി	ഏര്‍പ്പെടുത്തുക	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Pass	31	advcl	_	_
+29	കരട്	കരട്	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	30	compound	_	_
+30	വിജ്ഞാപനം	വിജ്ഞാപനം	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	31	obj	_	_
+31	പുറത്തിറക്കിയത്	പുറത്തിറക്കുക	VERB	_	Polarity=Pos|Tense=Past|VerbForm=Vnoun|Voice=Act	0	root	_	SpaceAfter=No
+32	.	.	PUNCT	_	_	31	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 3
+# text = 48 എംപി പ്രൈമറി ക്യാമറ സെൻസർ, 5 എംപി സെക്കൻഡറി അൾട്രാ-വൈഡ് ആംഗിൾ ലെൻസ്, 2 എംപി ടെർഷ്യറി മാക്രോ ലെൻസ്, 2 എംപി ഫോർഫോർത്ത്ത്ത് ഡെപ്ത് സെൻസർ എന്നിവയുള്ള പിൻഭാഗത്ത് ക്വാഡ് ക്യാമറ സംവിധാനം നോക്കിയ ജി 20ൽ ഉപയോഗിക്കും.
+1	48	48	PROPN	_	NumForm=Digit|NumType=Card	5	flat	_	_
+2	എംപി	എംപി	PROPN	_	Abbr=Yes|Animacy=Anim|Case=Nom|Number=Sing	5	flat	_	_
+3	പ്രൈമറി	പ്രൈമറി	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	5	flat	_	_
+4	ക്യാമറ	ക്യാമറ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	5	flat	_	_
+5	സെൻസർ	സെൻസർ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	27	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	12	punct	_	_
+7	5	5	NUM	_	NumForm=Digit|NumType=Card	12	flat	_	_
+8	എംപി	എംപി	PROPN	_	Abbr=Yes|Animacy=Anim|Case=Nom|Number=Sing	12	flat	_	_
+9	സെക്കൻഡറി	സെക്കൻഡറി	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	12	flat	_	_
+10	അൾട്രാ-വൈഡ്	അൾട്രാ-വൈഡ്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	12	flat	_	_
+11	ആംഗിൾ	ആംഗിൾ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	12	flat	_	_
+12	ലെൻസ്	ലെൻസ്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	18	punct	_	_
+14	2	2	PROPN	_	NumForm=Digit|NumType=Card	18	flat	_	_
+15	എംപി	എംപി	PROPN	_	Abbr=Yes|Animacy=Anim|Case=Nom|Number=Sing	18	flat	_	_
+16	ടെർഷ്യറി	ടെർഷ്യറി	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	18	flat	_	_
+17	മാക്രോ	മാക്രോ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	18	flat	_	_
+18	ലെൻസ്	ലെൻസ്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+19	,	,	PUNCT	_	_	24	punct	_	_
+20	2	2	PROPN	_	NumForm=Digit|NumType=Card	24	flat	_	_
+21	എംപി	എംപി	PROPN	_	Abbr=Yes|Animacy=Anim|Case=Nom|Number=Sing	24	flat	_	_
+22	ഫോർഫോർത്ത്ത്ത്	ഫോർഫോർത്ത്ത്ത്	PROPN	_	Animacy=Inan|Case=Loc|Number=Sing	24	flat	_	_
+23	ഡെപ്ത്	ഡെപ്ത്	PROPN	_	Animacy=Inan|Case=Loc|Number=Sing	24	flat	_	_
+24	സെൻസർ	സെൻസർ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	5	conj	_	_
+25-26	എന്നിവയുള്ള	_	_	_	_	_	_	_	_
+25	എന്നിവ	എന്നിവ	CCONJ	_	_	5	cc	_	_
+26	ഉള്ള	ഉള്ള	AUX	_	_	5	aux	_	_
+27	പിൻഭാഗത്ത്	പിൻഭാഗം	NOUN	_	Animacy=Inan|Case=Loc|Number=Sing	31	obl	_	_
+28	ക്വാഡ്	ക്വാഡ്	PROPN	_	Animacy=Inan|Case=Nom|Foreign=Yes|Number=Sing	29	compound	_	_
+29	ക്യാമറ	ക്യാമറ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	30	nmod	_	_
+30	സംവിധാനം	സംവിധാനം	NOUN	_	Animacy=Inan|Case=Acc|Number=Sing	31	obj	_	_
+31	നോക്കിയ	നോക്കിയ	PROPN	_	VerbForm=Part	34	nsubj	_	_
+32	ജി	ജി	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	33	flat	_	_
+33	20ൽ	20ൽ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	31	flat	_	_
+34	ഉപയോഗിക്കും	ഉപയോഗിക്കുക	VERB	_	Mood=Ind|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+35	.	.	PUNCT	_	_	34	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 4
+# text = കോണ്‍ഗ്രസ് അധ്യക്ഷന്‍ രാഹുല്‍ ഗാന്ധി, പാര്‍ട്ടി ജനറല്‍ സെക്രട്ടറി പ്രിയങ്ക ഗാന്ധി, ബിഎസ്പി അധ്യക്ഷ മായാവതി, ഹൈദരാബാദ് എംപി അസദുദ്ദീന്‍ ഒവൈസി, കിഴക്കന്‍ ഡല്‍ഹി എംപിയും മുന്‍ ക്രിക്കറ്റ് താരവുമായ ഗൗതം ഗംഭീര്‍ തുടങ്ങി നിരവധി രാഷ്ട്രീയ നേതാക്കള്‍ പ്രതിഷേധവുമായി രംഗത്തെത്തി.
+1	കോണ്‍ഗ്രസ്	കോണ്‍ഗ്രസ്	NOUN	_	Animacy=Inan|Case=Com|Number=Plur	2	compound	_	_
+2	അധ്യക്ഷന്‍	അധ്യക്ഷന്‍	NOUN	_	_	4	appos	_	_
+3	രാഹുല്‍	രാഹുല്‍	PROPN	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	flat	_	_
+4	ഗാന്ധി	ഗാന്ധി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	35	nmod	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	10	punct	_	_
+6	പാര്‍ട്ടി	പാര്‍ട്ടി	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	8	nmod	_	_
+7	ജനറല്‍	ജനറല്‍	NOUN	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	8	compound	_	_
+8	സെക്രട്ടറി	സെക്രട്ടറി	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	10	appos	_	_
+9	പ്രിയങ്ക	പ്രിയങ്ക	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	10	flat	_	_
+10	ഗാന്ധി	ഗാന്ധി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	_	_
+12	ബിഎസ്പി	ബിഎസ്പി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	13	nmod	_	_
+13	അധ്യക്ഷ	അധ്യക്ഷ	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	14	appos	_	_
+14	മായാവതി	മായാവതി	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+15	,	,	PUNCT	_	_	19	punct	_	_
+16	ഹൈദരാബാദ്	ഹൈദരാബാദ്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	17	nmod	_	_
+17	എംപി	എംപി	NOUN	_	Animacy=Anim|Case=Nom|Number=Sing	19	appos	_	_
+18	അസദുദ്ദീന്‍	അസദുദ്ദീന്‍	PROPN	_	_	19	flat	_	_
+19	ഒവൈസി	ഒവൈസി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+20	,	,	PUNCT	_	_	31	punct	_	_
+21	കിഴക്കന്‍	കിഴക്കന്‍	ADJ	_	_	22	amod	_	_
+22	ഡല്‍ഹി	ഡല്‍ഹി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	23	nmod	_	_
+23-24	എംപിയും	_	_	_	_	_	_	_	_
+23	എംപി	എംപി	ADJ	_	Animacy=Anim|Case=Nom|Number=Sing	31	amod	_	_
+24	ഉം	ഉം	CCONJ	_	_	23	cc	_	_
+25	മുന്‍	മുന്‍	ADJ	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	26	amod	_	_
+26	ക്രിക്കറ്റ്	ക്രിക്കറ്റ്	NOUN	_	Animacy=Inan|Case=Nom|Foreign=Yes|Number=Sing	27	nmod	_	_
+27-29	താരവുമായ	_	_	_	_	_	_	_	_
+27	താരം	താരം	NOUN	_	Animacy=Anim|Case=Nom|Number=Sing	23	conj	_	_
+28	ഉം	ഉം	CCONJ	_	_	27	cc	_	_
+29	ആയ	ആക്	AUX	_	_	23	aux	_	_
+30	ഗൗതം	ഗൗതം	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	31	flat	_	_
+31	ഗംഭീര്‍	ഗംഭീര്‍	PROPN	_	_	4	conj	_	_
+32	തുടങ്ങി	തുടങ്ങി	CCONJ	_	Tense=Past|VerbForm=Part	4	cc	_	_
+33	നിരവധി	നിരവധി	ADJ	_	_	35	amod	_	_
+34	രാഷ്ട്രീയ	രാഷ്ട്രീയ	ADJ	_	_	35	amod	_	_
+35	നേതാക്കള്‍	നേതാവ്	NOUN	_	_	40	nsubj	_	_
+36-38	പ്രതിഷേധവുമായി	_	_	_	_	_	_	_	_
+36	പ്രതിഷേധ	പ്രതിഷേധം	NOUN	_	_	39	obl	_	_
+37	ഉം	ഉം	PART	_	_	36	advmod:emph	_	_
+38	ആയി	ആക്	AUX	_	_	36	aux	_	_
+39-40	രംഗത്തെത്തി	_	_	_	_	_	_	_	SpaceAfter=No
+39	രംഗത്ത്	രംഗം	NOUN	_	Animacy=Inan|Case=Loc|Number=Sing	40	obl	_	_
+40	എത്തി	എത്തുക	VERB	_	Aspect=Imp|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+41	.	.	PUNCT	_	_	40	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 5
+# text = കേരള സംഗീത നാടക അക്കാദമി അവാർഡ്, കേരള കലാമണ്ഡലം അവാർഡ്, തൃപ്പൂണിത്തുറ പൂർണത്രയീശ പുരസ്‌കാരം, കലാമണ്ഡലം കൃഷ്ണൻ നായർ സുവർണ ജൂബിലി പുരസ്‌കാരം, ഇരിങ്ങാലക്കുട കഥകളി ക്ലബ്ബ് പുരസ്‌കാരം, ഉണ്ണായി വാരിയർ പുരസ്‌കാരം തുടങ്ങി നിരവധി പുരസ്‌കാരങ്ങളും ലഭിച്ചിട്ടുണ്ട്.
+1	കേരള	കേരള	PROPN	_	_	5	flat	_	_
+2	സംഗീത	സംഗീത	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	5	flat	_	_
+3	നാടക	നാടക	PROPN	_	_	5	flat	_	_
+4	അക്കാദമി	അക്കാദമി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	5	flat	_	_
+5	അവാർഡ്	അവാർഡ്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	32	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	_	_
+7	കേരള	കേരള	PROPN	_	_	9	flat	_	_
+8	കലാമണ്ഡലം	കലാമണ്ഡലം	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	9	flat	_	_
+9	അവാർഡ്	അവാർഡ്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	_	_
+11	തൃപ്പൂണിത്തുറ	തൃപ്പൂണിത്തുറ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	13	flat	_	_
+12	പൂർണത്രയീശ	പൂർണത്രയീശ	PROPN	_	_	13	flat	_	_
+13	പുരസ്‌കാരം	പുരസ്‌കാരം	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	20	punct	_	_
+15	കലാമണ്ഡലം	കലാമണ്ഡലം	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	20	flat	_	_
+16	കൃഷ്ണൻ	കൃഷ്ണൻ	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	20	flat	_	_
+17	നായർ	നായർ	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	20	flat	_	_
+18	സുവർണ	സുവർണ	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	20	flat	_	_
+19	ജൂബിലി	ജൂബിലി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	20	flat	_	_
+20	പുരസ്‌കാരം	പുരസ്‌കാരം	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+21	,	,	PUNCT	_	_	25	punct	_	_
+22	ഇരിങ്ങാലക്കുട	ഇരിങ്ങാലക്കുട	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	25	flat	_	_
+23	കഥകളി	കഥകളി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	25	flat	_	_
+24	ക്ലബ്ബ്	ക്ലബ്ബ്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	25	flat	_	_
+25	പുരസ്‌കാരം	പുരസ്‌കാരം	PROPN	_	Animacy=Inan|Case=Acc|Number=Sing	5	conj	_	SpaceAfter=No
+26	,	,	PUNCT	_	_	29	punct	_	_
+27	ഉണ്ണായി	ഉണ്ണായി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	29	flat	_	_
+28	വാരിയർ	വാരിയർ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	29	flat	_	_
+29	പുരസ്‌കാരം	പുരസ്‌കാരം	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	5	conj	_	_
+30	തുടങ്ങി	തുടങ്ങി	CCONJ	_	Tense=Past|VerbForm=Part	5	cc	_	_
+31	നിരവധി	നിരവധി	ADJ	_	_	32	amod	_	_
+32-33	പുരസ്‌കാരങ്ങളും	_	_	_	_	_	_	_	_
+32	പുരസ്‌കാരങ്ങൾ	പുരസ്‌കാരം	NOUN	_	Animacy=Inan|Case=Nom|Number=Plur	34	obj	_	_
+33	ഉം	ഉം	PART	_	_	32	advmod:emph	_	_
+34-35	ലഭിച്ചിട്ടുണ്ട്	_	_	_	_	_	_	_	SpaceAfter=No
+34	ലഭിച്ചിട്ടു	ലഭിക്കുക	VERB	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+35	ഉണ്ട്	ഉണ്ട്	AUX	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	34	aux	_	_
+36	.	.	PUNCT	_	_	34	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 6
+# text = രോഹിത്തിനെ കൂടാതെ വനിതാ ഗുസ്തി താരം വിനേഷ് ഫോഗട്ട്, ടേബിള്‍ ടെന്നീസ് താരം മനിക ബത്ര, പാരാലിമ്പിക്സില്‍ സ്വര്‍ണം നേടിയ മാരിയപ്പന്‍ തങ്കവേലു എന്നിവരെയും ഖേല്‍ രത്ന പുരസ്‌കാരത്തിന് ശുപാര്‍ശ ചെയ്തിട്ടുണ്ട്.
+1	രോഹിത്തിനെ	രോഹിത്ത്	PROPN	_	Animacy=Anim|Case=Acc|Number=Sing	7	obl	_	_
+2	കൂടാതെ	കൂടാതെ	ADP	_	_	1	case	_	_
+3	വനിതാ	വനിതാ	ADJ	_	Animacy=Inan|Case=Nom|Number=Sing	4	amod	_	_
+4	ഗുസ്തി	ഗുസ്തി	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	5	nmod	_	_
+5	താരം	താരം	NOUN	_	Animacy=Anim|Case=Nom|Number=Sing	7	appos	_	_
+6	വിനേഷ്	വിനേഷ്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	7	flat	_	_
+7	ഫോഗട്ട്	ഫോഗട്ട്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	13	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	_	_
+9	ടേബിള്‍	ടേബിള്‍	NOUN	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	10	compound	_	_
+10	ടെന്നീസ്	ടെന്നീസ്	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	11	nmod	_	_
+11	താരം	താരം	NOUN	_	Animacy=Anim|Case=Nom|Number=Sing	13	appos	_	_
+12	മനിക	മനിക	PROPN	_	_	13	flat	_	_
+13	ബത്ര	ബത്ര	PROPN	_	_	14	conj	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	19	punct	_	_
+15	പാരാലിമ്പിക്സില്‍	പാരാലിമ്പിക്സ്	NOUN	_	Animacy=Inan|Case=Loc|Number=Sing	17	obl	_	_
+16	സ്വര്‍ണം	സ്വര്‍ണം	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	17	compound	_	_
+17	നേടിയ	നേടിയ	ADJ	_	_	19	amod	_	_
+18	മാരിയപ്പന്‍	മാരിയപ്പന്‍	PROPN	_	_	19	flat	_	_
+19	തങ്കവേലു	തങ്കവേലു	PROPN	_	Case=Nom|NumForm=Word|NumType=Card	20	conj	_	_
+20-21	എന്നിവരെയും	_	_	_	_	_	_	_	_
+20	എന്നിവരെ	എന്നിവര്‍	CCONJ	_	_	22	cc	_	_
+21	ഉം	ഉം	PART	_	_	20	advmod:emph	_	_
+22	ഖേല്‍	ഖേല്‍	PROPN	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	26	obj	_	_
+23	രത്ന	രത്ന	PROPN	_	_	24	compound	_	_
+24	പുരസ്‌കാരത്തിന്	പുരസ്‌കാരം	NOUN	_	Animacy=Anim|Case=Dat|Number=Sing	26	obl	_	_
+25	ശുപാര്‍ശ	ശുപാര്‍ശ	NOUN	_	Animacy=Inan|Case=Acc|Number=Sing	26	obj	_	_
+26-27	ചെയ്തിട്ടുണ്ട്	_	_	_	_	_	_	_	SpaceAfter=No
+26	ചെയ്തിട്ട്	ചെയ്യുക	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+27	ഉണ്ട്	ഉണ്ട്	AUX	_	Aspect=Imp|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	26	aux	_	_
+28	.	.	PUNCT	_	_	26	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 7
+# text = രോഹിണി, ചിത്തരഞ്ജന്‍ ഗിരി, തനികെല്ല ഭരണി, രാം ഗോപാല്‍ ബജാജ്, ഷിജു, ഷാജു, ശ്രീമന്‍, മുകുന്ദന്‍, സമീര്‍, സഞ്ജു ശിവറാം, റിജു ബജാജ്, റിംജു എന്നിവരാണ് ചിത്രത്തിലെ പ്രധാന കഥാപാത്രങ്ങളെ അവതരിപ്പിക്കുന്നത്.
+1	രോഹിണി	രോഹിണി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	35	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	_	_
+3	ചിത്തരഞ്ജന്‍	ചിത്തരഞ്ജന്‍	PROPN	_	_	1	conj	_	_
+4	ഗിരി	ഗിരി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	3	flat	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	_	_
+6	തനികെല്ല	തനികെല്ല	PROPN	_	Mood=Ind|Polarity=Neg|Tense=Past|VerbForm=Fin	1	conj	_	_
+7	ഭരണി	ഭരണി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	6	flat	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	_	_
+9	രാം	രാം	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	10	compound	_	_
+10	ഗോപാല്‍	ഗോപാല്‍	PROPN	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	1	conj	_	_
+11	ബജാജ്	ബജാജ്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	10	flat	_	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	_	_
+13	ഷിജു	ഷിജു	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	_	_
+15	ഷാജു	ഷാജു	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	_	_
+17	ശ്രീമന്‍	ശ്രീമന്‍	PROPN	_	_	1	conj	_	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	_	_
+19	മുകുന്ദന്‍	മുകുന്ദന്‍	PROPN	_	_	1	conj	_	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	_	_
+21	സമീര്‍	സമീര്‍	PROPN	_	_	1	conj	_	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	_	_
+23	സഞ്ജു	സഞ്ജു	PROPN	_	_	1	conj	_	_
+24	ശിവറാം	ശിവറാം	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	23	flat	_	SpaceAfter=No
+25	,	,	PUNCT	_	_	27	punct	_	_
+26	റിജു	റിജു	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	27	flat	_	_
+27	ബജാജ്	ബജാജ്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	_	_
+29	റിംജു	റിംജു	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	1	conj	_	_
+30-31	എന്നിവരാണ്	_	_	_	_	_	_	_	_
+30	എന്നിവര്	എന്നിവര്	CCONJ	_	_	1	cc	_	_
+31	ആണ്	ആണ്	AUX	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin	30	cop	_	_
+32	ചിത്രത്തിലെ	ചിത്രം	NOUN	_	Animacy=Inan|Case=Loc|Number=Sing	35	obl	_	_
+33	പ്രധാന	പ്രധാന	ADJ	_	_	34	amod	_	_
+34	കഥാപാത്രങ്ങളെ	കഥാപാത്രം	NOUN	_	Animacy=Inan|Case=Acc|Number=Plur	35	obj	_	_
+35	അവതരിപ്പിക്കുന്നത്	അവതരിപ്പിക്കുക	VERB	_	Polarity=Pos|Tense=Pres|VerbForm=Vnoun|Voice=Act	0	root	_	SpaceAfter=No
+36	.	.	PUNCT	_	_	35	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 8
+# text = സ്വന്തം സാംസ്‌കാരികവും ചരിത്രപരവുമായ മൂല്യങ്ങളുളള ഗ്രാമങ്ങളുടെ കന്നഡ പേരുകള്‍ മാറ്റുന്നത് ഉചിതമല്ല, കര്‍ണാടക അതിര്‍ത്തി വികസന അതോറിറ്റി ചെയര്‍മാന്‍ ഡോ. സി. സോമശേഖര്‍ മുഖ്യമന്ത്രി യെദ്യൂരപ്പയുമായുള്ള കൂടിക്കാഴ്ചയ്ക്ക് ശേഷം പ്രസ്താവനയില്‍ പറഞ്ഞു.
+1	സ്വന്തം	സ്വന്തം	ADJ	_	_	2	amod	_	_
+2-3	സാംസ്‌കാരികവും	_	_	_	_	_	_	_	_
+2	സാംസ്‌കാരികം	സാംസ്‌കാരികം	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	7	nmod	_	_
+3	ഉം	ഉം	CCONJ	_	_	2	cc	_	_
+4-6	ചരിത്രപരവുമായ	_	_	_	_	_	_	_	_
+4	ചരിത്രപരം	ചരിത്രപരം	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	2	conj	_	_
+5	ഉം	ഉം	CCONJ	_	_	4	cc	_	_
+6	ആയ	ആക്	AUX	_	_	2	aux	_	_
+7-8	മൂല്യങ്ങളുളള	_	_	_	_	_	_	_	_
+7	മൂല്യങ്ങൾ	മൂല്യം	NOUN	_	Animacy=Anim|Case=Nom|Number=Sing	9	nmod	_	_
+8	ഉള്ള	ഉള്ള	AUX	_	Animacy=Anim|Case=Nom|Number=Sing	7	aux	_	_
+9	ഗ്രാമങ്ങളുടെ	ഗ്രാമങ്ങൾ	NOUN	_	Animacy=Inan|Case=Gen|Number=Plur	11	nmod	_	_
+10	കന്നഡ	കന്നഡ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	11	nmod	_	_
+11	പേരുകള്‍	പേരു	NOUN	_	_	12	nsubj	_	_
+12	മാറ്റുന്നത്	മാറ്റുക	VERB	_	Polarity=Pos|Tense=Pres|VerbForm=Vnoun|Voice=Act	13	acl	_	_
+13-14	ഉചിതമല്ല	_	_	_	_	_	_	_	SpaceAfter=No
+13	ഉചിതം	ഉചിതം	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	32	nsubj	_	_
+14	അല്ല	അല്ല	PART	_	Mood=Ind|Polarity=Neg|Tense=Pres|VerbForm=Fin	13	aux	_	_
+15	,	,	PUNCT	_	_	16	punct	_	_
+16	കര്‍ണാടക	കര്‍ണാടക	PROPN	_	_	17	nmod	_	_
+17	അതിര്‍ത്തി	അതിര്‍ത്തി	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	20	flat	_	_
+18	വികസന	വികസന	ADJ	_	Animacy=Inan|Case=Nom|Number=Sing	20	flat	_	_
+19	അതോറിറ്റി	അതോറിറ്റി	ADP	_	Animacy=Inan|Case=Acc|Number=Sing	20	flat	_	_
+20	ചെയര്‍മാന്‍	ചെയര്‍മാന്‍	NOUN	_	_	25	appos	_	_
+21	ഡോ	ഡോ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	25	flat	_	SpaceAfter=No
+22	.	.	PUNCT	_	_	21	punct	_	_
+23	സി	സി	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	25	flat	_	SpaceAfter=No
+24	.	.	PUNCT	_	_	23	punct	_	_
+25	സോമശേഖര്‍	സോമശേഖര്‍	PROPN	_	_	26	nmod	_	_
+26	മുഖ്യമന്ത്രി	മുഖ്യമന്ത്രി	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	27	appos	_	_
+27-28	യെദ്യൂരപ്പയുമായുള്ള	_	_	_	_	_	_	_	_
+27	യെദ്യൂരപ്പയുമായ്	യെദ്യൂരപ്പ	PROPN	_	_	29	nmod	_	_
+28	ഉള്ള	ഉള്ള	AUX	_	_	27	aux	_	_
+29	കൂടിക്കാഴ്ചയ്ക്ക്	കൂടിക്കാഴ്ച	NOUN	_	Animacy=Inan|Case=Dat|Number=Sing	31	nmod	_	_
+30	ശേഷം	ശേഷം	ADP	_	_	29	case	_	_
+31	പ്രസ്താവനയില്‍	പ്രസ്താവന	NOUN	_	Animacy=Inan|Case=Loc|Number=Sing	32	obl	_	_
+32	പറഞ്ഞു	പറയുക	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+33	.	.	PUNCT	_	_	32	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 9
+# text = അവസാന മുപ്പത് വര്‍ഷത്തില്‍ മൂന്ന് എഫ് എ കപ്പുകള്‍, നാല് ലീഗ് കപ്പുകള്‍, യുവേഫ കപ്പ്, രണ്ട് ചാമ്പ്യന്‍സ് ലീഗ്, മൂന്ന് സൂപ്പര്‍ കപ്പുകള്‍, ഒരു ക്ലബ്ബ് ലോകകപ്പ് എന്നിവ സ്വന്തമാക്കി.
+1	അവസാന	അവസാന	ADJ	_	_	2	amod	_	_
+2	മുപ്പത്	മുപ്പത്	NUM	_	Animacy=Inan|Case=Nom|Number=Sing	3	nummod	_	_
+3	വര്‍ഷത്തില്‍	വര്‍ഷം	NOUN	_	Animacy=Inan|Case=Loc|Number=Sing	28	obl	_	_
+4	മൂന്ന്	മൂന്ന്	NUM	_	Case=Nom|NumForm=Word|NumType=Card	7	nummod	_	_
+5	എഫ്	എഫ്	PROPN	_	Foreign=Yes	7	compound	_	_
+6	എ	എ	PROPN	_	Abbr=Yes|Animacy=Inan|Case=Nom|Number=Sing	7	compound	_	_
+7	കപ്പുകള്‍	കപ്പ്	NOUN	_	_	28	obj	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	_	_
+9	നാല്	നാല്	NUM	_	Case=Nom|NumForm=Word|NumType=Card	11	nummod	_	_
+10	ലീഗ്	ലീഗ്	NOUN	_	Animacy=Anim|Case=Nom|Number=Sing	11	compound	_	_
+11	കപ്പുകള്‍	കപ്പ്	NOUN	_	_	7	conj	_	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	_	_
+13	യുവേഫ	യുവേഫ	PROPN	_	Abbr=Yes|Animacy=Anim|Case=Nom|Number=Sing	14	flat	_	_
+14	കപ്പ്	കപ്പ്	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	7	conj	_	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	_	_
+16	രണ്ട്	രണ്ട്	NUM	_	Case=Nom|NumForm=Word|NumType=Card	18	nummod	_	_
+17	ചാമ്പ്യന്‍സ്	ചാമ്പ്യന്‍സ്	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	18	compound	_	_
+18	ലീഗ്	ലീഗ്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	7	conj	_	SpaceAfter=No
+19	,	,	PUNCT	_	_	22	punct	_	_
+20	മൂന്ന്	മൂന്ന്	NUM	_	Case=Nom|NumForm=Word|NumType=Card	22	nummod	_	_
+21	സൂപ്പര്‍	സൂപ്പര്‍	PROPN	_	_	22	compound	_	_
+22	കപ്പുകള്‍	കപ്പ്	PROPN	_	_	7	conj	_	SpaceAfter=No
+23	,	,	PUNCT	_	_	26	punct	_	_
+24	ഒരു	ഒരു	DET	_	Definite=Ind|PronType=Art	26	det	_	_
+25	ക്ലബ്ബ്	ക്ലബ്ബ്	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	26	compound	_	_
+26	ലോകകപ്പ്	ലോകകപ്പ്	PROPN	_	Animacy=Inan|Case=Acc|Number=Sing	7	conj	_	_
+27	എന്നിവ	എന്നിവ	CCONJ	_	_	7	cc	_	_
+28	സ്വന്തമാക്കി	സ്വന്തമാക്കുക	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+29	.	.	PUNCT	_	_	28	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 10
+# text = അഹമദാബാദ്- നവരാത്രി ആഘോഷങ്ങളുടെ ഭാഗമായി നടക്കുന്ന ഗര്‍ബ, ഡാണ്ഡിയ നൃത്ത വേദികളില്‍ ഹിന്ദുക്കളല്ലാത്തവര്‍ പ്രവേശിക്കുന്നത് തടയാന്‍ ഓരോരുത്തരുടേയും ആധാര്‍ കാര്‍ഡ് പരിശോധിക്കണമെന്ന് സംഘാടകര്‍ക്ക് തീവ്രഹിന്ദുത്വ സംഘടനയായ ബജ്‌റംഗ് ദള്‍ മുന്നറിയിപ്പു നല്‍കി.
+1	അഹമദാബാദ്-	അഹമദാബാദ്	PROPN	_	_	2	nmod	_	_
+2	നവരാത്രി	നവരാത്രി	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	3	nmod	_	_
+3	ആഘോഷങ്ങളുടെ	ആഘോഷം	NOUN	_	Case=Gen|Number=Sing|Person=2|PronType=Prs	4	nmod	_	_
+4-5	ഭാഗമായി	_	_	_	_	_	_	_	_
+4	ഭാഗം	ഭാഗം	NOUN	_	_	6	obl	_	_
+5	ആയി	ആക്	AUX	_	_	4	aux	_	_
+6	നടക്കുന്ന	നടക്കുക	VERB	_	VerbForm=Part	7	acl	_	_
+7	ഗര്‍ബ	ഗര്‍ബ	NOUN	_	_	11	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	_	_
+9	ഡാണ്ഡിയ	ഡാണ്ഡിയ	PROPN	_	_	7	conj	_	_
+10	നൃത്ത	നൃത്ത	ADJ	_	_	11	amod	_	_
+11	വേദികളില്‍	വേദി	NOUN	_	Animacy=Inan|Case=Loc|Number=Sing	15	obl	_	_
+12-14	ഹിന്ദുക്കളല്ലാത്തവര്‍	_	_	_	_	_	_	_	_
+12	ഹിന്ദുക്കൾ	ഹിന്ദു	NOUN	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	14	acl	_	_
+13	അല്ലാത്ത	അല്ല	PART	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	12	aux	_	_
+14	അവര്‍	അവര്‍	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	15	nsubj	_	_
+15	പ്രവേശിക്കുന്നത്	പ്രവേശിക്കുക	VERB	_	Polarity=Pos|Tense=Pres|VerbForm=Vnoun|Voice=Act	16	ccomp	_	_
+16	തടയാന്‍	തടയുക	VERB	_	_	17	amod	_	_
+17	ഓരോരുത്തരുടേയും	ഓരോരുത്തർ	PRON	_	_	19	nmod:poss	_	_
+18	ആധാര്‍	ആധാര്‍	PROPN	_	_	19	compound	_	_
+19	കാര്‍ഡ്	കാര്‍ഡ്	PROPN	_	Animacy=Inan|Case=Acc|Number=Sing	20	obj	_	_
+20-21	പരിശോധിക്കണമെന്ന്	_	_	_	_	_	_	_	_
+20	പരിശോധിക്കണം	പരിശോധിക്കുക	VERB	_	Mood=Nec|Polarity=Pos|VerbForm=Fin|Voice=Act	28	ccomp	_	_
+21	എന്ന്	എന്ന്	SCONJ	_	_	20	mark	_	_
+22	സംഘാടകര്‍ക്ക്	സംഘാടകര്‍	NOUN	_	Animacy=Inan|Case=Dat|Number=Sing	28	obl	_	_
+23	തീവ്രഹിന്ദുത്വ	തീവ്രഹിന്ദുത്വ	ADJ	_	_	24	amod	_	_
+24	സംഘടനയായ	സംഘടനയായ	ADJ	_	_	26	amod	_	_
+25	ബജ്‌റംഗ്	ബജ്‌റംഗ്	PROPN	_	Animacy=Inan|Case=Nom|Foreign=Yes|Number=Sing	26	flat	_	_
+26	ദള്‍	ദള്‍	PROPN	_	_	28	nsubj	_	_
+27	മുന്നറിയിപ്പു	മുന്നറിയിപ്പു	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	28	obj	_	_
+28	നല്‍കി	നല്‍കുക	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+29	.	.	PUNCT	_	_	28	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 11
+# text = കേരളം ഇന്ത്യയിലെ ഒരു സംസ്ഥാനം ആണ്.
+1	കേരളം	കേരളം	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	4	nsubj	_	_
+2	ഇന്ത്യയിലെ	ഇന്ത്യ	NOUN	_	Animacy=Inan|Case=Loc|Number=Sing	4	obl	_	_
+3	ഒരു	ഒരു	DET	_	Definite=Ind|PronType=Art	4	det	_	_
+4	സംസ്ഥാനം	സംസ്ഥാനം	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	0	root	_	_
+5	ആണ്	ആക്	AUX	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin	4	cop	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 12
+# text = ചന്ദ്രൻ രാത്രി ആകാശത്തിൽ പ്രകാശിക്കുന്നു.
+1	ചന്ദ്രൻ	ചന്ദ്രൻ	NOUN	_	Animacy=Anim|Case=Nom|Number=Sing	3	nmod	_	_
+2	രാത്രി	രാത്രി	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	3	nmod	_	_
+3	ആകാശത്തിൽ	ആകാശം	NOUN	_	Animacy=Inan|Case=Loc|Number=Sing	4	obl	_	_
+4	പ്രകാശിക്കുന്നു	പ്രകാശിക്കുക	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\n\n\n
+

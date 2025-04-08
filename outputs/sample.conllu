@@ -1,0 +1,102 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = മഴ പെയ്യുകയാണെന്ന് ഞാൻ കരുതുന്നു.
+1	മഴ	മഴ	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	2	nsubj	_	_
+2-4	പെയ്യുകയാണെന്ന്	_	_	_	_	_	_	_	_
+2	പെയ്യുക	പെയ്യുക	VERB	_	Aspect=Prog|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	6	ccomp	_	_
+3	ആണ്	ആക്	AUX	_	Aspect=Prog|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+4	എന്ന്	എന്ന്	SCONJ	_	_	3	mark	_	_
+5	ഞാൻ	ഞാൻ	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+6	കരുതുന്നു	കരുതുക	VERB	_	Aspect=Imp|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = ഫ്രാൻസിന്റെ തലസ്ഥാനമായ പാരീസിലാണ് അവൾ വളർന്നത്.
+1	ഫ്രാൻസിന്റെ	ഫ്രാൻസ്	PROPN	_	Animacy=Inan|Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	തലസ്ഥാനമായ	തലസ്ഥാനം	ADJ	_	_	3	amod	_	_
+3-4	പാരീസിലാണ്	_	_	_	_	_	_	_	_
+3	പാരീസിൽ	പാരീസ്	PROPN	_	Animacy=Inan|Case=Loc|Number=Sing	6	obl	_	_
+4	ആണ്	ആക്	AUX	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin	3	cop:emph	_	_
+5	അവൾ	അവൾ	PRON	_	Case=Nom|Deixis=Remt|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	വളർന്നത്	വളരുക	VERB	_	Polarity=Pos|Tense=Past|VerbForm=Vnoun|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = പാകിസ്ഥാൻ നിയമപ്രകാരം കാനഡയിലുള്ള തൻറെ ട്വിറ്റര് സെൻസർ ചെയ്തതിൽ പ്രകോപിതനായ എസ്രാ കടുത്ത ഭാഷയിലാണ് മന്ത്രിയെ വിമർശിച്ചത്.
+1	പാകിസ്ഥാൻ	പാകിസ്ഥാൻ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	2	nmod	_	_
+2	നിയമപ്രകാരം	നിയമപ്രകാരം	NOUN	_	Animacy=Inan|Case=Acc|Number=Sing	3	nmod	_	_
+3-4	കാനഡയിലുള്ള	_	_	_	_	_	_	_	_
+3	കാനഡയിൽ	കാനഡ	PROPN	_	Animacy=Inan|Case=Loc|Number=Sing	8	obl	_	_
+4	ഉള്ള	ഉള്ള	AUX	_	Animacy=Inan|Case=Loc|Number=Sing	3	aux	_	_
+5	തൻറെ	താൻ	PRON	_	Case=Gen|PronType=Prs|Reflex=Yes	7	nmod:poss	_	SpacesAfter=\s\s
+6	ട്വിറ്റര്	ട്വിറ്റര്	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	7	compound	_	_
+7	സെൻസർ	സെൻസർ	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	8	obj	_	_
+8	ചെയ്തതിൽ	ചെയ്യുക	VERB	_	Polarity=Pos|Tense=Past|VerbForm=Vnoun|Voice=Act	11	obl	_	_
+9-10	പ്രകോപിതനായ	_	_	_	_	_	_	_	_
+9	പ്രകോപിതൻ	പ്രകോപിതന്	ADJ	_	_	11	amod	_	_
+10	ആയ	ആക്	AUX	_	_	9	aux	_	_
+11	എസ്രാ	എസ്രാ	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	13	compound	_	_
+12	കടുത്ത	കടുപ്പു	ADJ	_	_	13	amod	_	_
+13-14	ഭാഷയിലാണ്	_	_	_	_	_	_	_	_
+13	ഭാഷയിൽ	ഭാഷ	NOUN	_	Animacy=Inan|Case=Loc|Number=Sing	16	obl	_	_
+14	ആണ്	ആണ്	AUX	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin	13	cop	_	_
+15	മന്ത്രിയെ	മന്ത്രി	NOUN	_	Animacy=Anim|Case=Acc|Number=Sing	16	obj	_	_
+16	വിമർശിച്ചത്	വിമർശിക്കുക	VERB	_	Polarity=Pos|Tense=Past|VerbForm=Vnoun|Voice=Act	0	root	_	SpaceAfter=No
+17	.	.	PUNCT	_	_	16	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = കഴിഞ്ഞ തിരഞ്ഞെടുപ്പുകളിൽ ദേശീയ പാർട്ടികൾ ദുർബലമാവുകയും പ്രാദേശിക പാർട്ടികൾ ശക്തരാവുകയും ചെയ്തതിനാൽ ഭരണത്തിൽ പങ്കാളിത്തമുള്ള പ്രാദേശിക പാർട്ടികളുടെ അഴിമതികളും സ്വാർത്ഥതയും രാജ്യത്തിന് വലിയ നഷ്ടങ്ങളുണ്ടാക്കിയിട്ടുണ്ട് .
+1	കഴിഞ്ഞ	കഴിഞ്ഞ	ADJ	_	_	2	amod	_	_
+2	തിരഞ്ഞെടുപ്പുകളിൽ	തിരഞ്ഞെടുപ്പ്	NOUN	_	Animacy=Inan|Case=Loc|Number=Plur	5	obl	_	_
+3	ദേശീയ	ദേശം	ADJ	_	_	4	amod	_	_
+4	പാർട്ടികൾ	പാർട്ടി	NOUN	_	Animacy=Inan|Case=Nom|Number=Plur	5	nsubj	_	_
+5-7	ദുർബലമാവുകയും	_	_	_	_	_	_	_	_
+5	ദുർബലം	ദുർബലം	VERB	_	VerbForm=Inf	13	obj	_	_
+6	ആവുക	ആവുക	AUX	_	VerbForm=Inf	5	aux	_	_
+7	ഉം	ഉം	CCONJ	_	_	5	cc	_	_
+8	പ്രാദേശിക	പ്രാദേശം	ADJ	_	_	9	amod	_	_
+9	പാർട്ടികൾ	പാർട്ടി	NOUN	_	Animacy=Inan|Case=Nom|Number=Plur	10	nsubj	_	_
+10-12	ശക്തരാവുകയും	_	_	_	_	_	_	_	_
+10	ശക്തർ	ശക്തർ	NOUN	_	VerbForm=Inf	5	conj	_	_
+11	ആവുക	ആവുക	AUX	_	VerbForm=Inf	10	aux	_	_
+12	ഉം	ഉം	CCONJ	_	_	10	cc	_	_
+13	ചെയ്തതിനാൽ	ചെയ്യുക	VERB	_	Polarity=Pos|Tense=Past|VerbForm=Vnoun|Voice=Act	26	xcomp	_	_
+14	ഭരണത്തിൽ	ഭരണം	NOUN	_	Animacy=Inan|Case=Loc|Number=Sing	15	obl	_	_
+15-16	പങ്കാളിത്തമുള്ള	_	_	_	_	_	_	_	_
+15	പങ്കാളിത്തം	പങ്കാളിത്തം	ADJ	_	_	17	amod	_	_
+16	ഉള്ള	ഉള്ള	AUX	_	_	15	aux	_	_
+17	പ്രാദേശിക	പ്രാദേശം	ADJ	_	_	18	amod	_	_
+18	പാർട്ടികളുടെ	പാർട്ടി	NOUN	_	Animacy=Inan|Case=Gen|Number=Plur	19	nmod:poss	_	_
+19-20	അഴിമതികളും	_	_	_	_	_	_	_	_
+19	അഴിമതികൾ	അഴിമതി	NOUN	_	Animacy=Inan|Case=Nom|Number=Plur	26	nsubj	_	_
+20	ഉം	ഉം	CCONJ	_	_	19	cc	_	_
+21-22	സ്വാർത്ഥതയും	_	_	_	_	_	_	_	_
+21	സ്വാർത്ഥത	സ്വാർത്ഥത	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	19	conj	_	_
+22	ഉം	ഉം	CCONJ	_	_	21	cc	_	_
+23	രാജ്യത്തിന്	രാജ്യം	NOUN	_	Animacy=Inan|Case=Dat|Number=Sing	26	obl	_	_
+24	വലിയ	വലിയ	ADJ	_	_	25	amod	_	_
+25-27	നഷ്ടങ്ങളുണ്ടാക്കിയിട്ടുണ്ട്	_	_	_	_	_	_	_	_
+25	നഷ്ടങ്ങൾ	നഷ്ടം	NOUN	_	Animacy=Inan|Case=Acc|Number=Plur	26	obj	_	_
+26	ഉണ്ടാക്കിയിട്ട്	ഉണ്ടാക്കുക	VERB	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+27	ഉണ്ട്	ഉണ്ട്	AUX	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	26	aux	_	_
+28	.	.	PUNCT	_	_	26	punct	_	SpacesAfter=\n
+
+# sent_id = 5
+# text = വീഡിയോ കണ്ടശേഷം ഇതിനെതിരെ ആരെങ്കിലും പ്രതികരിക്കും എന്നാണ് ആളുകളുടെ പ്രതീക്ഷ .
+1	വീഡിയോ	വീഡിയോ	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	2	obj	_	_
+2-3	കണ്ടശേഷം	_	_	_	_	_	_	_	_
+2	കണ്ട	കാണുക	VERB	_	Tense=Past|VerbForm=Part	7	advcl	_	_
+3	ശേഷം	ശേഷം	ADP	_	_	2	case	_	_
+4-5	ഇതിനെതിരെ	_	_	_	_	_	_	_	_
+4	ഇതിന്	ഇത്	PRON	_	Animacy=Inan|Case=Dat|Deixis=Prox|Gender=Neut|Number=Sing|Person=3|PronType=Prs	7	obl	_	_
+5	എതിരെ	എതിരെ	ADP	_	_	4	case	_	_
+6	ആരെങ്കിലും	ആരെങ്കിലും	PRON	_	Case=Nom|PronType=Ind	7	nsubj	_	_
+7	പ്രതികരിക്കും	പ്രതികരിക്കുക	VERB	_	Mood=Ind|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	11	ccomp	_	_
+8-9	എന്നാണ്	_	_	_	_	_	_	_	_
+8	എന്ന്	എന്ന്	SCONJ	_	_	7	mark	_	_
+9	ആണ്	ആക്	AUX	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin	7	aux	_	_
+10	ആളുകളുടെ	ആളുകൾ	NOUN	_	Animacy=Anim|Case=Gen|Number=Plur	11	nmod:poss	_	_
+11	പ്രതീക്ഷ	പ്രതീക്ഷ	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	0	root	_	_
+12	.	.	PUNCT	_	_	11	punct	_	SpacesAfter=\n
+

@@ -1,0 +1,66 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = നെയ്യാറ്റിന്‍കര, തിരുവനന്തപുരം, കൊല്ലം, കായംകുളം, ചെങ്ങന്നൂര്‍, തിരുവല്ല, കോട്ടയം, എറണാകുളം ടൗണ്‍, ആലുവ, തൃശൂര്‍, ഷൊര്‍ണൂര്‍, കുറ്റിപ്പുറം, തിരൂര്‍, കോഴിക്കോട്, വടകര, തലശേരി, കണ്ണൂര്‍, പയ്യന്നൂര്‍, കാഞ്ഞങ്ങാട്, കാസര്‍കോട് എന്നിവിടങ്ങളില്‍ സ്‌റ്റോപ്പ് അനുവദിച്ചിട്ടുണ്ട്.
+1	നെയ്യാറ്റിന്‍കര	നെയ്യാറ്റിന്‍കര	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	43	nsubj	_	SpacesBefore=\n|SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	_	_
+3	തിരുവനന്തപുരം	തിരുവനന്തപുരം	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	_	_
+5	കൊല്ലം	കൊല്ലം	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	_	_
+7	കായംകുളം	കായംകുളം	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	_	_
+9	ചെങ്ങന്നൂര്‍	ചെങ്ങന്നൂര്‍	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	_	_
+11	തിരുവല്ല	തിരുവല്ല	PART	_	Mood=Ind|Polarity=Neg|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	_	_
+13	കോട്ടയം	കോട്ടയം	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	_	_
+15	എറണാകുളം	എറണാകുളം	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	16	flat	_	_
+16	ടൗണ്‍	ടൗണ്‍	PROPN	_	_	1	conj	_	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	_	_
+18	ആലുവ	ആലുവ	PROPN	_	_	1	conj	_	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	_	_
+20	തൃശൂര്‍	തൃശൂര്‍	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	_	_
+22	ഷൊര്‍ണൂര്‍	ഷൊര്‍ണൂര്‍	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	_	_
+24	കുറ്റിപ്പുറം	കുറ്റിപ്പുറം	PROPN	_	Animacy=Inan|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	_	_
+26	തിരൂര്‍	തിരൂര്‍	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	_	_
+28	കോഴിക്കോട്	കോഴിക്ക്	PROPN	_	Animacy=Inan|Case=Dat|Number=Sing	1	conj	_	SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	_	_
+30	വടകര	വടകര	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+31	,	,	PUNCT	_	_	32	punct	_	_
+32	തലശേരി	തലശേരി	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+33	,	,	PUNCT	_	_	34	punct	_	_
+34	കണ്ണൂര്‍	കണ്ണൂര്‍	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+35	,	,	PUNCT	_	_	36	punct	_	_
+36	പയ്യന്നൂര്‍	പയ്യന്നൂര്‍	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+37	,	,	PUNCT	_	_	38	punct	_	_
+38	കാഞ്ഞങ്ങാട്	കാഞ്ഞങ്ങാട്	PROPN	_	Animacy=Anim|Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+39	,	,	PUNCT	_	_	43	punct	_	_
+40	കാസര്‍കോട്	കാസര്‍ക്	NOUN	_	Animacy=Inan|Case=Dat|Number=Sing	41	nmod	_	_
+41	എന്നിവിടങ്ങളില്‍	എന്നിവിടം	NOUN	_	Animacy=Inan|Case=Loc|Number=Sing	43	obl	_	_
+42	സ്‌റ്റോപ്പ്	സ്‌റ്റോപ്പ്	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	43	nsubj	_	_
+43-44	അനുവദിച്ചിട്ടുണ്ട്	_	_	_	_	_	_	_	SpaceAfter=No
+43	അനുവദിച്ചിട്ടു	അനുവദിക്കുക	VERB	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+44	ഉണ്ട്	ഉണ്ട്	AUX	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	43	aux	_	_
+45	.	.	PUNCT	_	_	43	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = രാഷ്ട്രപതി അംഗീകരിച്ചില്ലെങ്കിൽ സുപ്രീം കോടതിയെ സമീപിക്കാനും തീരുമാനം.
+1	രാഷ്ട്രപതി	രാഷ്ട്രപതി	NOUN	_	Animacy=Anim|Case=Nom|Number=Sing	2	nsubj	_	_
+2-4	അംഗീകരിച്ചില്ലെങ്കിൽ	_	_	_	_	_	_	_	_
+2	അംഗീകരിച്ച്	അംഗീകരിക്കുക	VERB	_	Mood=Cnd|Polarity=Neg|Tense=Past|VerbForm=Fin|Voice=Act	7	advcl	_	_
+3	ഇല്ല	ഇല്ല	PART	_	Mood=Cnd|Polarity=Neg|Tense=Past|VerbForm=Fin|Voice=Act	2	aux	_	_
+4	എങ്കിൽ	എങ്കിൽ	CCONJ	_	Mood=Cnd|Polarity=Neg|Tense=Past|VerbForm=Fin|Voice=Act	2	cc	_	_
+5	സുപ്രീം	സുപ്രീം	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	6	compound	_	_
+6	കോടതിയെ	കോടതി	NOUN	_	Animacy=Inan|Case=Acc|Number=Sing	7	obj	_	_
+7-8	സമീപിക്കാനും	_	_	_	_	_	_	_	_
+7	സമീപിക്കാന	സമീപിക്കക	VERB	_	Polarity=Pos|VerbForm=Inf	9	xcomp	_	_
+8	ഉം	ഉം	PART	_	_	7	advmod:emph	_	_
+9	തീരുമാനം	തീരുമാനം	NOUN	_	Animacy=Inan|Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\n
+

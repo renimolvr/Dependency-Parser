@@ -1,0 +1,193 @@
+{
+  "version": 2,
+  "shortcuts": {
+    "AV": {
+      "UPOS": "ADV"
+    },
+    "C": {
+      "UPOS": "CCONJ"
+    },
+    "D": {
+      "UPOS": "DET"
+    },
+    "E": {
+      "UPOS": "PROPN"
+    },
+    "I": {
+      "UPOS": "INTJ"
+    },
+    "AJ": {
+      "UPOS": "ADJ"
+    },
+    "N": {
+      "UPOS": "NOUN"
+    },
+    "P": {
+      "UPOS": "ADP"
+    },
+    "R": {
+      "UPOS": "PRON"
+    },
+    "S": {
+      "UPOS": "SCONJ"
+    },
+    "T": {
+      "UPOS": "PART"
+    },
+    "U": {
+      "UPOS": "NUM"
+    },
+    "V": {
+      "UPOS": "VERB"
+    },
+    "X": {
+      "UPOS": "AUX"
+    },
+    ".": {
+      "UPOS": "PUNCT"
+    },
+    ":ns": {
+      "FEATS": [
+        "Number=Sing"
+      ]
+    },
+    ":np": {
+      "FEATS": [
+        "Number=Plur"
+      ]
+    },
+    ":gf": {
+      "FEATS": [
+        "Gender=Fem"
+      ]
+    },
+    ":gm": {
+      "FEATS": [
+        "Gender=Masc"
+      ]
+    },
+    ":p1": {
+      "FEATS": [
+        "Person=1"
+      ]
+    },
+    ":p2": {
+      "FEATS": [
+        "Person=2"
+      ]
+    },
+    ":p3": {
+      "FEATS": [
+        "Person=3"
+      ]
+    },
+    ":tp": {
+      "FEATS": [
+        "Tense=Present"
+      ]
+    },
+    ":ta": {
+      "FEATS": [
+        "Tense=Past"
+      ]
+    },
+    ":mi": {
+      "FEATS": [
+        "Mood=Ind"
+      ]
+    },
+    ":vi": {
+      "FEATS": [
+        "VerbForm=Inf"
+      ]
+    },
+    ":vf": {
+      "FEATS": [
+        "VerbForm=Fin"
+      ]
+    },
+    ":vp": {
+      "FEATS": [
+        "VerbForm=Part"
+      ]
+    },
+    ":sa": {
+      "MISC": [
+        "SpacesAfter=\\n"
+      ]
+    },
+    ":san": {
+      "MISC": [
+        "SpaceAfter=No"
+      ]
+    },
+    "a": {
+      "DEP": "amod"
+    },
+    "b": {
+      "DEP": "advmod"
+    },
+    "c": {
+      "DEP": "case"
+    },
+    "d": {
+      "DEP": "det"
+    },
+    "f": {
+      "DEP": "fixed"
+    },
+    "l": {
+      "DEP": "acl"
+    },
+    "m": {
+      "DEP": "nmod"
+    },
+    "o": {
+      "DEP": "obj"
+    },
+    "p": {
+      "DEP": "punct"
+    },
+    "r": {
+      "DEP": "acl:relcl"
+    },
+    "t": {
+      "DEP": "parataxis"
+    },
+    "s": {
+      "DEP": "nsubj"
+    },
+    "u": {
+      "DEP": "nummod"
+    },
+    "v": {
+      "DEP": "advcl"
+    },
+    "x": {
+      "DEP": "xcomp"
+    },
+    "h": {
+      "DEP": "aux"
+    },
+    "i": {
+      "XPOS": "impf",
+      "UPOS": "AUX"
+    },
+    "j": {
+      "XPOS": "pred",
+      "UPOS": "PART"
+    },
+    "k": {
+      "XPOS": "verbnoun",
+      "UPOS": "NOUN"
+    },
+    "F": {
+      "XPOS": "place",
+      "UPOS": "PROPN"
+    },
+    "g": {
+      "XPOS": "person",
+      "UPOS": "PROPN"
+    }
+  }
+}

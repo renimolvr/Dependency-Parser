@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description - Malayalam Dependency Parser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <span>മലയാളം Dependency Parser</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/guidelines">Guidelines</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="content-card">
+            <h1>Parser Description</h1>
+            
+            <section>
+                <h2>What is a Dependency Parser?</h2>
+                <p align="justify">
+                    A dependency parser is a natural language processing tool that analyzes the grammatical structure 
+                    of a sentence based on the dependencies between words. It identifies which words depend on (or modify) 
+                    other words, creating a tree-like structure that represents the sentence's syntax.
+                </p>
+                
+                <div class="image-container">
+                    <!--<img src="/home/aparna/Desktop/project/Dep_par_UI/static/images/visualization.png" alt="Dependency parsing visualization" class="description-image">-->
+                    <img src="{{ url_for('static', filename='images/visualization.png') }}" alt="Dependency parsing visualization" class="description-image">
+
+                    <p class="image-caption">Example of dependency parsing visualization</p>
+                </div>
+                
+                <h2>Malayalam Dependency Parsing</h2>
+                <p align="justify">
+                    Malayalam is a Dravidian language spoken in the Indian state of Kerala and surrounding regions. 
+                    It has a rich morphological structure and relatively free word order, which presents unique 
+                    challenges for dependency parsing.
+                </p>
+                
+                <p align="justify">
+                    Our Malayalam dependency parser uses a combination of rule-based and statistical approaches 
+                    to analyze Malayalam sentences. It identifies relationships such as subject-verb dependencies, 
+                    noun-adjective modifications, and other grammatical structures specific to Malayalam.
+                </p>
+
+                <h2>Use Cases</h2>
+                <p>
+                    The Malayalam dependency parser can be used for various applications, including:
+                </p>
+                <ul>
+                    <li><b>Researchers:</b> Analyze syntactic patterns in Malayalam literature or historical texts.</li>
+                    <li><b>Developers: </b>Build NLP applications like chatbots, translators, or sentiment analysis tools with accurate linguistic data.</li>
+                    <li><b>Educators: </b>Teach Malayalam grammar using visualized parse trees.</li>
+                    <li><b>Language Preservation: </b>Digitally archive and study rare dialects or oral traditions.</li>
+                    </ul>
+                
+                <h2>Technical Approach</h2>
+                <p>
+                    The parser employs the following techniques:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Morphological Analysis:</strong> Breaks down Malayalam words into their component 
+                        morphemes to understand their grammatical properties.
+                    </li>
+                    <li>
+                        <strong>POS Tagging:</strong> Assigns part-of-speech tags to each word in the sentence.
+                    </li>
+                    <li>
+                        <strong>Dependency Relation Tagging:</strong> Identifies and labels syntactic relationships between words in a sentence.
+                    </li>
+                    
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Malayalam Dependency Parser. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

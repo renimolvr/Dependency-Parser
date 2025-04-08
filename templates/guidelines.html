@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guidelines - Malayalam Dependency Parser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <span>മലയാളം Dependency Parser</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/description">Description</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="content-card">
+            <h1>Usage Guidelines</h1>
+            
+            <section>
+                <h2>How to Use the Parser</h2>
+                <ol>
+                    <li>Enter a complete Malayalam sentence in the text area on the home page.</li>
+                    <li>Click the "Parse Sentence" button to submit your text for analysis.</li>
+                    <li>The parsing results will appear below the input area, showing the dependency relationships between words.</li>
+                    <li>You can upload a text file containing multiple Malayalam sentences for batch processing.</li>
+                    <li>The system will parse each sentence and display the results in a structured table format.</li>
+                    <li>You can edit the dependency relations in the table if needed.</li>
+                    <li>After editing, click "Save & Download" to download a CoNLL-U file with the parsed sentences.</li>
+
+
+                </ol>
+                
+                <h2>Best Practices</h2>
+                <ul>
+                    <li>Use complete, grammatically correct sentences for best results.</li>
+                    <li>Avoid very long or complex sentences (more than 25-30 words) as they may lead to less accurate parsing.</li>
+                    <li>Ensure proper spacing between words.</li>
+                    <li>The parser works best with standard Malayalam text without excessive code-mixing.</li>
+                </ul>
+                
+                <h2>Input Limitations</h2>
+                <p>The parser currently has the following limitations:</p>
+                <ul>
+                    <li>Maximum sentence length: 50 words</li>
+                    <li>Supports only Malayalam script (with limited support for English words within Malayalam text)</li>
+                    <li>May have reduced accuracy with dialectal variations</li>
+                </ul>
+                
+                <h2>Understanding the Output</h2>
+                <p align="justify">
+                    The parser output displays the dependency relationships between words in the sentence. 
+                    Each word is connected to its head word with a labeled arc indicating the grammatical 
+                    relationship. The output includes:
+                </p>
+                <ul>
+                    <li>Word index (position in the sentence)</li>
+                    <li>Word form (the actual word)</li>
+                    <li>Part of speech (POS) tag</li>
+                    <li>Head word index (the word it depends on)</li>
+                    <li>Dependency relation label</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Malayalam Dependency Parser. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

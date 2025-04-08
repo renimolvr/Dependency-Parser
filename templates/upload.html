@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload & Process - Malayalam Dependency Parser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .table-container {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+        overflow-x: hidden; /* Prevents left-right scrolling */
+        }
+        .navbar {
+            margin-bottom: 15px;
+        }
+
+        /* Adjust the main container to fit everything properly */
+        .container1{
+            max-width: 1000px; /* Reduce width to prevent overflow */
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h3 {
+            color: #4a5fc1;
+        }
+        .upload-section {
+            background: #e8eaf6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            background: #4a5fc1;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .sentence-table {
+            width: 100%;
+            border-collapse: collapse;
+            }
+
+
+        button:hover {
+            background: #3749a7;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #4a5fc1;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        td {
+        min-width: 100px;
+        }
+
+        .navigation {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+        }
+
+        td:focus {
+            background-color: #e8eaf6;
+            outline: none;
+        }
+
+        .button-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;  /* Adds spacing between buttons */
+        }
+
+        .sentence-table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed; /* Distributes column width evenly */
+        }
+
+        /* Ensure columns fit within the table */
+        .sentence-table th, .sentence-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 14px;
+            word-wrap: break-word;
+            overflow: hidden;
+            white-space: normal; /* Prevents text overflow */
+        }
+
+        /* Ensure header sticks to the top */
+        .sentence-table th {
+            background-color: #4a5fc1;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        /* Sentence text styling */
+        .sentence-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            text-align: left;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <span>മലയാളം Dependency Parser</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/description">Description</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <h3>Upload a Text File for Processing</h3>
+        <div class="upload-section">
+            <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="file" accept=".txt" required>
+                <button type="submit">Upload and Process</button>
+                <p id="error-msg" style="color: red; display: none;">Only .txt files are allowed!</p>
+            </form>
+        </div>
+
+        {% if table_data %}
+<h3>Processed CoNLL-U Data</h3>
+
+<div class="table-container">
+    {% for sentence_idx, sentence_tuple in table_data %}
+        {% set sentence = sentence_tuple[0] %}
+        {% set sentence_data = sentence_tuple[1] %}
+
+        <div class="sentence-table-wrapper" id="table_{{ sentence_idx }}" style="display: none;">
+            <!-- Display the Corresponding Sentence -->
+            <p class="sentence-text"><strong>Sentence:</strong> {{ sentence }}</p>
+
+            <table class="sentence-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>FORM</th>
+                        <th>LEMMA</th>
+                        <th>UPOS</th>
+                        <th>XPOS</th>
+                        <th>FEATS</th>
+                        <th>HEAD</th>
+                        <th>DEPREL</th>
+                        <th>DEPS</th>
+                        <th>MISC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in sentence_data %}
+                    <tr>
+                        {% for item in row %}
+                        <td contenteditable="true">{{ item }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% endfor %}
+</div>
+<!-- Navigation & Save Buttons -->
+<div class="button-container">
+    <button onclick="prevTable()" id="prevBtn" style="display: none;">← Previous</button>
+    <span id="tableCounter"></span>
+    <button onclick="nextTable()" id="nextBtn">Next →</button>
+</div>
+
+<div class="button-container">
+    <button onclick="saveTableData()">Save & Download</button>
+</div>
+{% endif %}
+</main>        
+<script>
+    document.getElementById("uploadForm").addEventListener("submit", function (event) {
+        let fileInput = document.getElementById("fileInput");
+        let errorMsg = document.getElementById("error-msg");
+
+        // Check if a file is selected
+        if (!fileInput.files.length) {
+            event.preventDefault();
+            errorMsg.style.display = "block";
+            errorMsg.textContent = "Please select a file before uploading.";
+            return;
+        }
+
+        // Get the file name and check the extension
+        let fileName = fileInput.files[0].name;
+        if (!fileName.endsWith(".txt")) {
+            event.preventDefault();  // Stop form submission
+            errorMsg.style.display = "block";
+            errorMsg.textContent = "Only .txt files are allowed!";
+            return;
+        }
+        // Hide error if the file is valid
+        errorMsg.style.display = "none";
+    });
+    let currentTable = 0;
+
+    let totalTables = JSON.parse('{{ table_data|length | default(0) | tojson }}');
+    function showTable(index) {
+        document.querySelectorAll('.sentence-table-wrapper').forEach((el, i) => {
+            el.style.display = i === index ? 'block' : 'none';
+        });
+
+        document.getElementById('prevBtn').style.display = index === 0 ? 'none' : 'inline-block';
+        document.getElementById('nextBtn').style.display = index === totalTables - 1 ? 'none' : 'inline-block';
+        document.getElementById('tableCounter').innerText = `Sentence ${index + 1} of ${totalTables}`;
+    }
+
+    function prevTable() {
+        if (currentTable > 0) {
+            currentTable--;
+            showTable(currentTable);
+        }
+    }
+
+    function nextTable() {
+        if (currentTable < totalTables - 1) {
+            currentTable++;
+            showTable(currentTable);
+        }
+    }
+    function saveTableData() {
+        let tables = document.querySelectorAll('.sentence-table-wrapper');
+        let data = [];
+
+        tables.forEach(tableWrapper => {
+            let rows = tableWrapper.querySelectorAll('tbody tr');
+            let tableData = [];
+            rows.forEach(row => {
+                let cols = row.querySelectorAll('td');
+                let rowData = [];
+                cols.forEach(col => rowData.push(col.innerText.trim()));
+                tableData.push(rowData);
+            });
+            data.push(tableData);
+        });
+        fetch('/save_edit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ table_data: data })
+        }).then(response => response.json()).then(data => {
+            window.location.href = `/download/${data.filename}`;
+        });
+    }
+    // Show first table on page load
+    showTable(0);
+</script>
+</body>
+</html>

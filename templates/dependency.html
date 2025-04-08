@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dependency Relations- Malayalam Dependency Parser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+    }
+    th, td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+    th {
+        background-color: #f4f4f4;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <span>മലയാളം Dependency Parser</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/description">Description</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="content-card">
+            <h1>Dependency Relations</h1>
+            <section>
+                <h2>Universal Dependencies</h2>
+                <p align="justify">
+                    UD relations are standardized grammatical labels used to describe syntactic relationships between words in a Malayalam sentence. These relations capture how words (nouns, verbs, modifiers, 
+                    etc.) depend on one another, enabling computational analysis and cross-linguistic consistency. Malayalam’s agglutinative morphology, SOV (Subject-Object-Verb) structure, and case-marking 
+                    system shape how these relations are applied. 
+                </p>
+                
+                <h2>Dependency Relations Tags</h2>
+                
+                <table>
+                    <tr>
+                        <th>Sl No.</th>
+                        <th>Relation</th>
+                        <th>Description</th>
+                        <th>Example (Malayalam)</th>
+                    </tr>
+                    <tr><td>1</td><td>acl</td><td>Clause modifying a noun</td><td>അവൻ വായിച്ച പുസ്തകം ("The book he read") → വായിച്ച (read) modifies പുസ്തകം (book).</td></tr>
+                    <tr><td>2</td><td>acl:relcl</td><td>A relative clause modifying a noun</td><td>ഞാൻ ഇഷ്ടപ്പെടുന്ന സിനിമ ("The movie I like") → ഇഷ്ടപ്പെടുന്ന (like) modifies സിനിമ (movie).</td></tr>
+                    <tr><td>3</td><td>advcl</td><td>A clause modifying a verb, adjective, or sentence</td><td>അവൻ വരുമ്പോൾ ഞാൻ പോയി. ("When he came, I left.") → വരുമ്പോൾ (when he came) modifies പോയി (left).</td></tr>
+                    <tr><td>4</td><td>advmod</td><td>Adverb modifying a verb, adjective, or adverb</td><td>അവൻ വേഗത്തിൽ ഓടി. ("He ran fast.") → വേഗത്തിൽ (fast) modifies ഓടി (ran).</td></tr>
+                    <tr><td>5</td><td>advmod:emph</td><td>An adverb giving emphasis</td><td>അവൻ തന്നെ പറഞ്ഞു. ("He himself said it.") → തന്നെ (himself) emphasizes അവൻ (he).</td></tr>
+                    <tr><td>6</td><td>amod</td><td>Adjective modifying a noun</td><td>വലിയ വീട് ("Big house") → വലിയ (big) modifies വീട് (house).</td></tr>
+                    <tr><td>7</td><td>appos</td><td>A noun phrase that renames another noun</td><td>കേരളം, നമ്മുടെ സംസ്ഥാനം, മനോഹരമാണ്. ("Kerala, our state, is beautiful.") → സംസ്ഥാനം (state) renames കേരളം (Kerala).</td></tr>
+                    <tr><td>8</td><td>aux</td><td>Helping verbs like "is", "was"</td><td>അവൻ വരുന്നു. ("He is coming.") → വരുന്നു (is coming) is an auxiliary verb.</td></tr>
+                    <tr><td>9</td><td>case</td><td>Postpositions indicating grammatical roles</td><td>അവൻ വീട്ടിൽ ഇരിക്കുന്നു. ("He is at home.") → ൽ (at) marks location.</td></tr>
+                    <tr><td>10</td><td>cc</td><td>Links two equal elements</td><td>അവനും ഞാനും കൂട്ടുകാർ ആണ്. ("He and I are friends.") → ഉം (and) joins അവൻ (he) and ഞാൻ (I).</td></tr>
+                    <tr><td>11</td><td>ccomp</td><td>A clause functioning as an object</td><td>അവൻ വരുമെന്ന് ഞാൻ കരുതുന്നു. ("I think he will come.") → വരുമെന്ന് (that he will come) is the complement.</td></tr>
+                    <tr><td>12</td><td>compound</td><td>Two words combined to form a single unit</td><td>ഓട്ടോഡ്രൈവർ ("Auto driver") → ഓട്ടോ (auto) and ഡ്രൈവർ (driver) form a compound.</td></tr>
+                    <tr><td>13</td><td>compound:lvc</td><td>A verb-noun combination where the verb has little meaning</td><td>അവൻ തീരുമാനമെടുത്തു. ("He made a decision.") → എടുത്തു (took) is a light verb with തിരമയം (decision).</td></tr>
+                    <tr><td>14</td><td>compound:svc</td><td>Two verbs forming a single meaning</td><td>അവൻ നോക്കി ചിരിച്ചു. ("He looked and laughed.") → നോക്കി (looked) and ചിരിച്ചു (laughed) act as one unit.</td></tr>
+                    <tr><td>15</td><td>conj</td><td>Two elements connected by a conjunction</td><td>അവൻ പഠിച്ചു, എഴുതുകയും ചെയ്തു. ("He studied and also wrote.")</td></tr>
+                    <tr><td>16</td><td>cop</td><td>Verb linking subject and predicate</td><td>അവൻ ഒരു ഡോക്ടറാണ്. ("He is a doctor.") → ആണ് (is) is a copula.</td></tr>
+                    <tr><td>17</td><td>cop:emph</td><td>Copula verb used for emphasis</td><td>അവൻ തന്നെയാണ് ടീച്ചർ. ("He is indeed the teacher.")</td></tr>
+                    <tr><td>18</td><td>csubj</td><td>A clause acting as a subject</td><td>പഠിക്കുന്നത് പ്രധാനമാണ്. ("Studying is important.") → പഠിക്കുന്നത് (studying) is the subject.</td></tr>
+                    <tr><td>19</td><td>det</td><td>Words like "this", "that" before nouns</td><td>ഈ പുസ്തകം നല്ലതാണ്. ("This book is good.") → ഈ (this) is a determiner.</td></tr>
+                    <tr><td>20</td><td>nmod</td><td>A noun modifying another noun</td><td>അമ്മയുടെ വീട് ("Mother’s house") → അമ്മയുടെ (mother’s) modifies വീട് (house).</td></tr>
+                    <tr><td>21</td><td>nsubj</td><td>A noun acting as the subject</td><td>അവൻ ഓടുന്നു. ("He is running.")</td></tr>
+                    <tr><td>22</td><td>obj</td><td>The object of a verb</td><td>അവൻ ഒരു പുസ്തകം വായിച്ചു. ("He read a book.")</td></tr>
+                    <tr><td>23</td><td>obl</td><td>Non-core arguments like time, location</td><td>അവൻ സ്കൂളിൽ പോയി. ("He went to school.")</td></tr>
+                    <tr><td>24</td><td>parataxis</td><td>Two main clauses in a sentence</td><td>അവൻ വീട്ടിൽ പോയി, ഞാൻ സ്കൂളിൽ പോയി. ("He went home, I went to school.")</td></tr>
+                    <tr><td>25</td><td>punct</td><td>Punctuation marks</td><td>ഞാൻ വീട്ടിൽ ആയിരുന്നു. (Here, "." is the punctuation)</td></tr>
+                    <tr><td>26</td><td>root</td><td>The main verb or predicate of the sentence</td><td>അവൻ വീട്ടിൽ പോയി. ("He went home.")</td></tr>
+                    <tr><td>27</td><td>vocative</td><td>Addressing someone directly</td><td>അച്ഛാ, എന്താണ് വിശേഷം? ("Dad, what’s the news?")</td></tr>
+                    <tr><td>28</td><td>xcomp</td><td>Marks a verb complement with an implicit subject shared with the main clause.</td><td>അവൻ പഠിക്കാൻ തുടങ്ങി. ("He started studying.")</td></tr>
+                    <tr><td>29</td><td>flat</td><td>Links parts of a multi-word proper noun (e.g., names, titles) with no hierarchical dependency.</td><td>ഡോ. മനമോഹൻ സിംഗ്.(Dr. Manmohan Singh) ഡോ." (Dr.) and name "മനമോഹൻ സിംഗ്" form a single entity. Both words are treated as equal siblings under flat.</td></tr>
+                    <tr><td>30</td><td>iobj</td><td>The recipient of an action</td><td>അവൻ അച്ഛന്‍ ഒരു പുസ്തകം നൽകി. ("He gave a book to his father.") → അച്ഛന്‍ (to father) is the indirect object.</td></tr>
+                    <tr><td>31</td><td>mark</td><td>A word introducing a clause</td><td>അവൻ വരുമ്പോൾ ഞാൻ വീട്ടിൽ ആയിരുന്നു. ("When he came, I was home.") → വരുമ്പോൾ (when he came) marks the clause.</td></tr>
+                    <tr><td>32</td><td>nmod:poss</td><td>Marks a possessive relationship between two nouns</td><td>രാമന്റെ വീട്.(Raman’s house) House is possessed by Raman</td></tr>
+                    <tr><td>33</td><td>nummod</td><td>Number modifying a noun</td><td>മൂന്ന് കുട്ടികൾ കളിക്കുന്നു. ("Three children are playing.")</td></tr>
+                    
+                </table>
+                             
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Malayalam Dependency Parser. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

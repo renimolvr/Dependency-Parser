@@ -1,0 +1,709 @@
+/** This library is under the 3-Clause BSD License
+
+Copyright (c) 2018-2023, Orange S.A.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+  1. Redistributions of source code must retain the above copyright notice,
+     this list of conditions and the following disclaimer.
+
+  2. Redistributions in binary form must reproduce the above copyright notice,
+     this list of conditions and the following disclaimer in the documentation
+     and/or other materials provided with the distribution.
+
+  3. Neither the name of the copyright holder nor the names of its contributors
+     may be used to endorse or promote products derived from this software without
+     specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+ THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+ @author Johannes Heinecke
+ @version 2.28.0 as of 6th October 2024
+*/
+
+body {
+    margin-top: 280px; /* header height + top offset */
+    height: 100%;
+    text-align: justify;
+    font-family:  Lato, Ubuntu, KacstOne, DejaVu Sans, Arial, Helvetica, Sans;
+    overflow: scroll;
+
+}
+
+tt {
+    font-family: Courier, FreeMono, Mono;
+}
+
+h1  {
+    color:#ff6600;
+}
+
+
+h2 {
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 18px;
+}
+
+#comm,
+#sentencetext,
+#arbre {
+    margin-left: 5px;
+}
+
+
+#compare {
+    margin-left: 5px;
+}
+
+#goldword {
+    color:#00bb00;
+    background-color: white;
+}
+
+#editedword {
+    color:#bb4400;
+    background-color: white;
+}
+
+.compfilename {
+    color: black;
+}
+
+#oooarbre {
+    /*white-space: nowrap; */
+    overflow-x: auto;
+}
+
+#header {
+    position:fixed; /* make the header (navigation and search buttons) stick to the top */
+    width:100%;
+    top:0;
+    height: whatever;
+    /*background: white; */
+
+    /*background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgba(247,220,180, 1)),
+        color-stop(1, rgba(255,255,255, 0))
+        );
+    */
+    background-image: linear-gradient(rgba(247,220,180, 1),
+        rgba(251,235,212, 1),
+        rgba(254,246,233, 1),
+        rgba(255,255,255, 0));
+}
+
+textArea {
+    text-align:justify;
+    font-family: /*Pecita, */ Sans, Arial, Helvetica;
+    /*font-size: 125%;*/
+}
+
+td, th {
+    padding-right: 5px;
+    padding-left: 5px;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: inherit;
+}
+
+tr.everyotherrow:nth-child(odd) {
+    background-color:#ffe5cc;
+}
+tr.everyotherrow:nth-child(even) {
+    background-color:white;
+}
+
+.tableheader {
+    background-color:#ff7900;
+}
+
+.chunk0 {background-color:#ff780080; /*opacity: 0.5; */
+         fill:#ff780080 }
+.chunk1 {background-color:#4ab4e6; fill:#4ab4e6 }
+.chunk2 {background-color:#ffb4e680; fill:#ffb4e680 }
+.chunk3 {background-color:#ffd200; fill:#ffd200 }
+.chunk4 {background-color:#4fbd8780; fill:#4fbd8780 }
+.chunk5 {background-color:#a885d880; fill:#a885d880 }
+
+img.helptextbutton {
+    border-radius: 5px;
+    border: 1px solid #222;
+    padding: 5px;
+    width: 25px;
+        background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(217,217,217)),
+        color-stop(1, rgb(252,252,252))
+        );
+}
+
+/* format of application buttons in the help text */
+.buttondoc {
+    font-style: italic;
+    border-radius: 5px;
+    border: 1px solid #222;
+    padding: 5px;
+        background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(217,217,217)),
+        color-stop(1, rgb(252,252,252))
+        );
+}
+
+/* format of keys to press in the help text */
+.keydoc {
+    font-weight: bold;
+    font-family: Courier, FreeMono, Mono;
+    border-radius: 3px;
+    border: 1px solid #222;
+    padding: 1px;
+}
+
+/* format of user commands in the help text */
+.userinputdoc {
+    font-family: Courier, FreeMono, Mono;
+    background-color: #f8f8f8;
+    padding-left: .1em;
+    padding-right: .3em;
+}
+
+/* format of command line commands in the help text */
+.commandline {
+    font-family: Courier, FreeMono, Mono;
+    padding-left: 6em;
+}
+
+/* make normal buttons look like mycheckbuttons */
+.mybutton, btn-primary {
+    font-family: inherit;
+    /* top right bottom left */
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #959595;
+    height: 30px;
+    vertical-align: middle;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(217,217,217)),
+        color-stop(1, rgb(252,252,252))
+        );
+    background: -webkit-linear-gradient(bottom, #d9d9d9, #fcfcfc);
+    background:    -moz-linear-gradient(bottom, #d9d9d9, #fcfcfc);
+    background:        -linear-gradient(bottom, #d9d9d9, #fcfcfc);
+}
+
+.mybutton:hover {
+    border-radius: 5px;
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(227,227,227)),
+        color-stop(1, rgb(255,255,255))
+        );
+}
+
+.smallmybutton {
+  height: 25px;
+  font-size: smaller;
+  border-radius: 8px;
+  width: 18px;
+}
+
+input {
+   font-family: inherit;
+}
+
+/* input field design */
+.inputfield {
+    vertical-align: middle;
+    border-radius: 5px;
+    border: solid 1px #959595;
+    padding-left: 3px;
+}
+
+/* width of the input fields for searching */
+.searchfield {
+    width: 8em;
+}
+
+.resizable-input {
+    /* make resizable */
+    overflow-x: hidden;
+    resize: horizontal;
+    /* was inline-block*/
+    display: inline-flex;
+
+    /* no extra spaces */
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+
+    /* default widths */
+    width: 10em;
+    min-width: 2em;
+    max-width: 30em;
+}
+
+/* let <input> assume the size of the wrapper */
+.resizable-input > input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* add a visible handle */
+
+.resizable-input > span {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: -16px;
+    width: 10px;
+    height: 10px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAJUlEQVR4AcXJRwEAIBAAIPuXxgiOW3xZYzi1Q3Nqh+bUDk1yD9sQaUG/4ehuEAAAAABJRU5ErkJggg==");
+    cursor: ew-resize;
+}
+
+
+/* reset sice for multifield and comment search, since the value given in searchfield is too small */
+#multifield, #comment {
+    width: 14em;
+}
+
+/* background for buttons with icons */
+.contain {
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(217,217,217)),
+        color-stop(1, rgb(252,252,252))
+        );
+    position: relative;
+    top: 6px; /** position of the button from top */
+    padding: 0px 0px 0px 0px;
+}
+
+.contain:hover {
+    overflow: hidden;
+    display: inline-block;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(227,227,227)),
+        color-stop(1, rgb(255,255,255))
+        );
+    position: relative;
+    top: 6px;
+    padding: 0px 0px 0px 0px;
+}
+
+.contain.active {
+    border-radius: 5px;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(224, 116, 13)),
+        color-stop(1, rgb(252, 145, 14))
+        );
+}
+
+.undoredo {
+    font-weight: bold;
+    /* font: 25px "Ubuntu Mono", mono, Arial, Helvetica, sans-serif; */
+}
+
+#undo {
+    background: url('img/undo.svg');
+    background-size: 20px 20px !important;
+    background-repeat:no-repeat !important;
+    height: 30px;
+    width: 30px;
+    background-position: 5px center !important;
+}
+
+#undo:disabled {
+    background: url( 'img/undo_disabled.svg' ) ;
+}
+
+#redo {
+    background: url('img/redo.svg');
+    background-size: 20px 20px !important;
+    background-repeat:no-repeat !important;
+    height: 30px;
+    width: 30px;
+    background-position: 5px center !important;
+}
+
+#redo:disabled {
+    background: url('img/redo_disabled.svg');
+}
+
+#first {
+    background: url('img/Start.svg');
+    background-size: 16px 16px;
+    background-repeat:no-repeat;
+    height: 30px;
+    width: 30px;
+    background-position: 7px center;
+}
+
+#last {
+    background: url('img/End.svg');
+    background-size: 16px 16px;
+    background-repeat:no-repeat;
+    height: 30px;
+    width: 30px;
+    background-position: 7px center;
+}
+
+#prec {
+    background: url('img/preceding.svg');
+    background-size: auto 16px;
+    background-repeat:no-repeat;
+    height: 30px;
+    width: 30px;
+    background-position: 8px center;
+}
+
+#next {
+    background: url('img/following.svg');
+    background-size: auto 16px;
+    background-repeat:no-repeat;
+    height: 30px;
+    width: 30px;
+    background-position: 10px center;
+}
+
+#backwards {
+    background: url('img/backwards.svg');
+    background-size: auto 16px;
+    background-repeat:no-repeat;
+    height: 30px;
+    width: 45px;
+    background-position: 5px center;
+}
+
+#clear {
+    background: url('img/clear.svg');
+    background-size: auto 16px;
+    background-repeat:no-repeat;
+    height: 30px;
+    width: 37px;
+    background-position: 5px center;
+}
+
+#findword, #findlemma, #findupos, #findxpos, #finddeprel, #findcomment,
+#findmulti, #findsentid, #findfeature, #findsubtree {
+    background: url('img/search.svg');
+    background-size: 20px 20px;
+    background-repeat:no-repeat;
+    height: 30px;
+    width: 30px;
+    background-position: 5px center;
+}
+
+/* inspired by https://designmodo.com/3d-css3-button/ */
+.mycheck {
+    display: inline-block;
+    text-decoration: none;
+
+    /* top right bottom left */
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #959595;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(217,217,217)),
+        color-stop(1, rgb(252,252,252))
+        );
+}
+
+.mycheck.active {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(224, 116, 13)),
+        color-stop(1, rgb(252, 145, 14))
+        );
+
+}
+
+.mycheck:hover {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgba(244, 146, 13)),
+        color-stop(1, rgba(245, 187, 15))
+        );
+    color: #222;
+}
+
+#errors {
+    color: red;
+
+}
+
+.errorhl {
+    color: white;
+    background-color: #AA0000;
+}
+
+#psc, #pendingshortcuts {
+    display: none;
+    color: rgb(136, 0, 0);
+}
+
+.sentinfo, #changespendingsaveQQ {
+    font-family: "Lato Light"
+}
+
+/** redefine font for thie <pre></pre> */
+#commentfield {
+    font-family: inherit;
+}
+
+/* (xe)latex logos */
+.revcap {
+    display: inline-block;
+    text-transform: uppercase;
+    transform: rotateY(180deg);
+}
+
+.latex {
+    font-family: Serif;
+}
+
+/* A and E of LATEX spellt in upper case */
+.latex sub,
+.latex sup {
+    text-transform: uppercase;
+}
+
+/* size, position of the lowered E of LATEX */
+.latex sub {
+    vertical-align: -0.05ex;
+    margin-left: -0.15em;
+    margin-right: -0.1em;
+    font-size: 1em;
+}
+
+
+/* size, position of the raised A of LATEX. modifies <sup> tag */
+.latex sup {
+    font-size: 0.79em;
+    vertical-align: -0.1em;
+    margin-left: -0.16em;
+    margin-right: -0.15em;
+}
+
+.modal-header {
+    background-image: linear-gradient(rgba(255,153,51, 1),
+      /*  rgba(251,235,212, 1),
+        rgba(254,246,233, 1),*/
+        rgba(255,255,255, 0));
+}
+
+.modal-xl {
+    width: 90%;
+    max-width:1300px;
+}
+
+.ui-autocomplete.ui-widget {
+    /*font-family: sans; */
+    color: blue;
+    font-size: 90%;
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+text {
+    font-family: "Lato", "Amiri", "KacstOne", sans-serif;
+}
+
+#shortcuthelp {
+    display: none;
+}
+
+#shortcuttable {
+    font-size: 80%;
+    border: 1px solid;
+    text-align: left;
+    /*font-family: monospace;*/
+}
+
+
+
+#subtreesearch {
+    display: none;
+}
+
+#searchandreplace {
+    display: none;
+}
+
+#grewmatchsearchandreplace {
+    display: none;
+}
+
+
+/* table of shortcut help (invoked with "?" key) */
+.sc {
+    padding-left: 0px;
+}
+
+.sc_help_td {
+	word-wrap: break-word;
+}
+
+
+.sckey {
+    font-weight: bold;
+    font-family: monospace;
+}
+
+
+#editsubtree {
+    resize: vertical;
+    width: 80%;
+    vertical-align: top;
+}
+
+#subtree {
+    vertical-align: top;
+}
+
+
+
+#compare table  {
+  border-collapse: collapse;
+}
+
+#compare table tr td {
+  border: 1px solid black;
+}
+
+.dewis  {
+	font-family: inherit;
+    /* top right bottom left */
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #959595;
+    height: 30px;
+    vertical-align: middle;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(217,217,217)),
+        color-stop(1, rgb(252,252,252))
+        );
+    display: inline-block;
+    overflow:hidden;
+
+
+}
+/* http://jsfiddle.net/fbnw9g5x/4/ */
+.dewis select {
+    width: 110px;
+    padding: 5px;
+    height:30px;
+    line-height: 1;
+    border: none;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background: transparent url('img/select.svg');
+    background-size: auto .8em;
+    background-position: right .3em top 50%;
+    background-repeat:no-repeat;
+}
+
+.dewis:hover {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(227,227,227)),
+        color-stop(1, rgb(255,255,255))
+        );
+}
+
+.dewisl select {
+    width: 150px
+}
+
+.FEtitle {
+    /*background-color: #ff8000;*/
+    font-style: italic;
+    margin-right: 15px;
+}
+
+#multishortcutlist {
+    font-size: 80%;
+    border: 1px solid black;
+}
+
+.upossc {
+    color: #9164cd;
+}
+.xpossc {
+    color: #50be87;
+}
+.featsc {
+    color: #4bb4e6;
+}
+
+.deprelsc {
+    color: #0a6e31;
+}
+
+.miscsc {
+    color: #492191;
+}
